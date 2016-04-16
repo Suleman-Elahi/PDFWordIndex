@@ -45,7 +45,7 @@ namespace PDFIndex
             {
                 string values = null;
                 word.Value.ForEach(v => values += v + ", ");
-                file.WriteLine("{0}\t\t{1}", word.Key, values);
+                file.WriteLine("{0}\t{1}", word.Key, values);
             }
 
             Console.WriteLine("Completed! nb of words: {0}", wordIndex.Count);
